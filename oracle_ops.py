@@ -4,7 +4,6 @@
 import oci
 import os.path
 import sys
-import json
 from utilities import utilities
 import datetime
 

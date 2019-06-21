@@ -25,7 +25,7 @@ class oracle_ops(utilities):
             "instance_id": ''       #Enter Instance OCID here. You can also takes instance OCID through command line through sys.argv
          }
         self.instance_metadata = {
-        'ssh_authorized_keys': "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCM2+/ziIZCr7tSkKd9f31QLVsJfyCEAlUl+x1iJ84unCVvF2Oh0pjNQD/cGWQcbv9TY1ubbhLLzRRCteQqvmzWoq9iTYCy9OLjnjjQauvVoY5YDva4FHC2nIaH6fsMzBFiTUQ95sPR9rU3h7LwbEDpUWv58b7ilFw7yC7jIMct7iILH2qHM7qdlyrQXj0idAa27C8czN5eVc4rwvwDPztUXnhWTmlV+S6XEK0QLlg807J/XZWGYMu2iPwzgmrMUwSnZizjaBAxaOmyJyu7+e6G1A7wJxgrCvr3rDdvvfxE/090Zt/NxnIBT1QhS9YbXIEjiK756S3QQNYyU2DYNIyl root",
+        'ssh_authorized_keys': "", #enter ssh key here 
         }
         self.compute_client = oci.core.ComputeClient(self.configfile, retry_strategy=oci.retry.DEFAULT_RETRY_STRATEGY)
         self.virtual_network_client = oci.core.VirtualNetworkClient(self.configfile,retry_strategy=oci.retry.DEFAULT_RETRY_STRATEGY)
